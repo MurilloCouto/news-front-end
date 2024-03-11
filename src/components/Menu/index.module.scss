@@ -1,0 +1,104 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem 0 2rem;
+  height: 3.5rem;
+  background-color: var(--gray-700);
+  color: var(--yellow);
+
+  box-shadow: 0 6px 16px #ffff0083;
+
+  .logoCenter {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-family: "Exo", sans-serif;
+  }
+
+  .b1 {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .b1:hover {
+    cursor: pointer;
+  }
+
+  .b2 {
+    font-weight: 600;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    border: 0;
+    padding: 0.25rem 3rem;
+    transition: 0.3s ease;
+  }
+
+  .b2:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+
+  .logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+.menuLateralOpen {
+  height: 100vh;
+  width: 16rem;
+  background-color: var(--gray-600);
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+
+  ul {
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+
+    li {
+      margin: 1rem 0;
+
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--yellow);
+    }
+  }
+
+  .b1 {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: 0.75rem;
+    margin-left: 85%;
+    transition: 0.3s ease;
+  }
+
+  .b1:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
