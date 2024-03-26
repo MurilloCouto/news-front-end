@@ -1,6 +1,5 @@
 .container {
   display: flex;
-
   text-align: left;
 }
 
@@ -14,4 +13,11 @@
   padding: 1rem;
   padding-top: 4rem;
   width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .rightColumn,
+  .leftColumn {
+    display: none;
+  }
 }

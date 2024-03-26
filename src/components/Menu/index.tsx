@@ -42,7 +42,7 @@ export function Menu() {
           <img className={styles.logo} src="/logoIcon.svg" alt="logo" />
           <h1>OhBless News</h1>
         </div>
-        <div>
+        <div className={styles.botoes}>
           {isAuthenticated ? (
             <button
               onClick={() => handleLinkClick("/admin/new/create")}

@@ -48,3 +48,15 @@
 .content + .content {
   margin-top: 6rem;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+
+    img {
+      height: 14rem;
+    }
+  }
+}

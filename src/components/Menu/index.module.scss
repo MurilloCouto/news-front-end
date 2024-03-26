@@ -102,3 +102,48 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+
+    height: 11rem;
+    padding: 0 1rem;
+
+    .b2 {
+      width: 100%;
+    }
+
+    .b2 + .b2 {
+      width: 100%;
+      margin-bottom: 0.8rem;
+    }
+
+    .b1 {
+      margin-top: 0.5rem;
+    }
+
+    .botoes {
+      flex-direction: column;
+    }
+  }
+
+  .menu .logoCenter {
+    position: static;
+    transform: none;
+    margin: 0.5rem 0;
+  }
+
+  .menuLateralOpen {
+    width: 45%;
+    padding-top: 3.5rem; /* Adicione espaço para o menu fixo */
+  }
+
+  .menuLateralOpen ul {
+    padding: 1rem; /* Ajuste o padding conforme necessário */
+  }
+
+  .menuLateralOpen .b1 {
+    margin-left: auto; /* Alinhe o botão à direita */
+  }
+}
