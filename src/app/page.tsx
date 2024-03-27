@@ -11,6 +11,7 @@ import axios from "axios";
 
 export default function HomePage() {
   const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const baseUrl = "https://news-back-end-sooty.vercel.app";
 
@@ -18,6 +19,7 @@ export default function HomePage() {
     try {
       const result = await axios.get(`${baseUrl}/news`);
       setNews(result.data);
+      setLoading(false);
     } catch (error: any) {
       alert(error.response?.data?.message || "Ocorreu um erro desconhecido");
     }
@@ -28,10 +30,22 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <LeftColumn className={styles.leftColumn} />
-      <NewsSection news={news} />
-      <RightColumn className={styles.rightColumn} />
+    <div>
+      {loading ? (
+        <div className={styles.loading}>
+          <img
+            src="https://media.tenor.com/On7kvXhzml4AAAAi/loading-gif.gif"
+            alt="carregando"
+          />
+          <h3>Carregando notícias...</h3>
+        </div>
+      ) : (
+        <div className={styles.container}>
+          <LeftColumn className={styles.leftColumn} />
+          <NewsSection news={news} />
+          <RightColumn className={styles.rightColumn} />
+        </div>
+      )}
     </div>
   );
 }
