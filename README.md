@@ -2,7 +2,7 @@
 ## Screenshots
 
 - Version 1.0
-![App Screenshot]!(https://github.com/MurilloCouto/news-front-end/assets/123082600/c3739762-e2dd-46c9-9a0a-b81245163608)
+![App Screenshot]!(https://github.com/MurilloCouto/news-front-end/blob/main/OhBlessNews.png?raw=true)
 
 
 # OhBless News 
