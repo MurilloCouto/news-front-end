@@ -32,6 +32,10 @@
 
 - https://news-front-end.vercel.app/
 
+## Back End repository link 
+
+- https://github.com/MurilloCouto/news-back-end
+
 ## Author
 
 - [@MurilloCouto](https://www.github.com/MurilloCouto)
