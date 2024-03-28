@@ -59,3 +59,27 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .form {
+    margin: 5rem 1rem;
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+      }
+    }
+  }
+}

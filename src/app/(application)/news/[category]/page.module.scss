@@ -20,3 +20,15 @@
     width: 20%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    .rightColumn {
+      display: none;
+    }
+
+    .leftColumn {
+      width: 100%;
+    }
+  }
+}

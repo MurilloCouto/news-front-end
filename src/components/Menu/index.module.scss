@@ -112,11 +112,12 @@
 
     .b2 {
       width: 100%;
+      margin-bottom: 0.75rem;
     }
 
     .b2 + .b2 {
       width: 100%;
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.75rem;
     }
 
     .b1 {
@@ -135,15 +136,15 @@
   }
 
   .menuLateralOpen {
-    width: 45%;
-    padding-top: 3.5rem; /* Adicione espaço para o menu fixo */
+    width: 50%;
+    padding-top: 3.5rem;
   }
 
   .menuLateralOpen ul {
-    padding: 1rem; /* Ajuste o padding conforme necessário */
+    padding: 1rem;
   }
 
   .menuLateralOpen .b1 {
-    margin-left: auto; /* Alinhe o botão à direita */
+    margin-left: auto;
   }
 }

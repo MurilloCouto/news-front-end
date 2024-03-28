@@ -5,6 +5,7 @@ import { Menu } from "@/components/Menu";
 import "./globals.scss";
 
 import { AuthProvider } from "./AuthContext";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Menu />
           {children}
+          <Footer />
         </body>
       </html>
     </AuthProvider>

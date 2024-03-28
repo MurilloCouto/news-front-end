@@ -1,0 +1,46 @@
+.footer {
+  justify-content: center;
+  padding-bottom: 3rem;
+  margin-top: auto;
+
+  a {
+    color: white !important;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.list {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  gap: 3rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 2rem;
+    p {
+      margin-left: 1rem;
+    }
+  }
+
+  .list {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    gap: 1rem;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
